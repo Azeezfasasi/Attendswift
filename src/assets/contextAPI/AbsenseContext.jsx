@@ -98,7 +98,7 @@ useEffect(() => {
   fetchAbsences();
 }, [API_BASE_URL]); // Add API_BASE_URL to the dependency array.
 
-// In submitAbsenceRequest
+//submitAbsenceRequest
 const submitAbsenceRequest = async (studentId, reason) => {
   try {
       const response = await axios.post(API_BASE_URL + '/absence-request', {
